@@ -130,12 +130,25 @@ class Customer{
 		void CheckIn2::ShowEmptyRoom(){
 			cout << "========== CHECK IN ==========" << endl;
 			cout << " Empty room" << endl;
-			cout << endl;// 1st Floor 102 105 106 109
-			cout << endl;//2nd 201 207
+			/*void ShowEmptyRoom(){
+			cout << "========== CHECK IN ==========" << endl;
+			for(int i=0;i<numRoom;i++){
+			cout << temp->people_room<< endl;
+			cout << "="<<temp->type_room<<  endl;
+			if(temp->status_room=="Empty"){
+			if(num != temp->people_room){
+			cout << temp->num_room << "\t" << temp->people_room  << "people \t"<< temp->type_room << "\t\t"<<temp->price_room<< "$"<< endl;
+				
+				}	
+				
+			}
+			temp = temp->next;
+		}
 			cout << "Enter room : " ;
 			cin >> numRoom;//Choose room;
+			setRoom(numRoom);//funtion setRoom
 			cout << "===============================" << endl;
-		}//show empty room
+		}//show empty room*/
 		void CheckIn2::ChooseRoom(){
 			cout << " Room number : " ; //Room number
 			cin >> numRoom;
