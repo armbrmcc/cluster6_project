@@ -64,13 +64,15 @@ class Customer{
 			tel = " ";
 			dayIn = " ";
 			dayOut = " ";
+			numNight = 0;
 			amount = 0;
 		}//get customer data
-		void CheckIn2::setCustomerData(string n,string t,string in,string out,int a){
+		void CheckIn2::setCustomerData(string n,string t,string in,string out,int a, int night){
 			name = n;
 			tel = t;
 			dayIn = in;
 			dayOut = out;
+			numNight = night;
 			amount = a;
 		}//set customer data
 		void CheckIn2::MenuCheckIn(){
@@ -94,7 +96,7 @@ class Customer{
 			cout << " Name : " << name << endl; //Name customer
 			cout << " Tel : " << tel << endl; //Tel customer
 			cout << " Day check in : " << dayIn << endl; //Day check in
-			cout << " Day check out : " << dayOut << endl; //Day check out
+			cout << " Number of nights : " << numNight << endl; //numNight
 			cout << " Amount : " << amount << endl; //Number people
 			cout << " Room number : " << numRoom << endl;
 		}//Booked information
@@ -104,7 +106,7 @@ class Customer{
 			cout << " Name : " << name << endl; //Name customer
 			cout << " Tel : " << tel << endl; //Tel customer
 			cout << " Day check in : " << dayIn << endl; //Day check in
-			cout << " Day check out : " << dayOut << endl; //Day check out
+			cout << " Number of nights : " << numNight << endl; //numNight
 			cout << " Amount : " << amount << endl; //Number people
 			cout << " Room number : " << numRoom << endl; //Room number
 			cout << "===============================" << endl;
@@ -119,8 +121,8 @@ class Customer{
 			cin >> tel;
 			cout << " Day check in : " ; //Day check in
 			cin >> dayIn;
-			cout << " Day check out : " ; //Day check out
-			cin >> dayOut;
+			cout << " Number of nights : "; //numNight 
+			cin >> numNight;
 			cout << " Amount : " ; //Number people
 			cin >> amount;
 			cout << "=======================================" << endl;
