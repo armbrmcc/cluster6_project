@@ -1,16 +1,15 @@
 #ifndef CHECKIN2_H
 #define CHECKIN2_H
-#include"Room.h"
-#include "node_room.h"
-#include "Booking.h"
-//#include "nodeCustomer.h"
-#include "customer.h"
 #include<iostream>
 #include<string>
 #include<fstream>
 #include<iomanip>
 #include<Windows.h>
 #include<sstream>
+#include"Room.h" 
+#include "node_room.h"
+#include "Booking.h" 
+#include "customer.h" 
 
 using namespace std;
 /*class nodeCustomer{
@@ -41,6 +40,7 @@ class CheckIn2{
 		string tel;
 		string dayIn;
 		string dayOut;
+		int numNight;
 		int amount;
 		string numRoom;
 	public:
