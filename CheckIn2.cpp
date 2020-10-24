@@ -154,7 +154,7 @@ class Customer{
 		}*/
 //};//customer
 
-
+/*
 
 int main(){
 	int MenuCheckIn,dayin,dayout;
@@ -189,4 +189,4 @@ int main(){
 			r.ChangeStatus(room);
 			s.CheckInComplete();
 		}//if Menu check in
-}//main
+}//main*/
